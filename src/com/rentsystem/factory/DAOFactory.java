@@ -1,7 +1,6 @@
 package com.rentsystem.factory;
 
 import com.rentsystem.dao.*;
-//import com.rentsystem.impl.*;
 import com.rentsytem.proxy.*;
 
 public class DAOFactory {
