@@ -6,6 +6,12 @@ public class AdminUserVO {
 	private String userName = null;
 	private String passWord = null;
 	
+	public AdminUserVO(int tmpId, String name, String password){
+		this.adminId = tmpId;
+		this.userName = name;
+		this.passWord = password;
+	}
+	
 	public int getAdminId() {
 		return adminId;
 	}

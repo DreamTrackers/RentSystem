@@ -9,6 +9,15 @@ public class HeatingRateVO {
 	private String payer = null;
 	private String payVal = null;
 	
+	public HeatingRateVO(int tmpId, int houseid, String paydate, double money, String name, String interval){
+		this.heatingRateId = tmpId;
+		this.houseId = houseid;
+		this.payDate = paydate;
+		this.fee = money;
+		this.payer = name;
+		this.payVal = interval;
+	}
+	
 	public int getHeatingRateId() {
 		return heatingRateId;
 	}

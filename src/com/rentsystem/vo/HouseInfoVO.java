@@ -10,6 +10,16 @@ public class HouseInfoVO {
 	private int numOfPeople = 0;
 	private String peopleName = null;
 	
+	public HouseInfoVO(int id, String housename, int fee, String intime, String outtime, int num, String peoplename){
+		this.houseId = id;
+		this.houseName = housename;
+		this.price = fee;
+		this.inTime = intime;
+		this.outTime = outtime;
+		this.numOfPeople = num;
+		this.peopleName = peoplename;
+	}
+	
 	public int getHouseId() {
 		return houseId;
 	}

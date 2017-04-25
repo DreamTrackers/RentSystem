@@ -10,6 +10,17 @@ public class WaterRateVO {
 	private double realPay = 0.0;
 	private String payer = null;
 	
+	public WaterRateVO(int id, int houseid, String date, String interval,
+			double shpay, double repay, String name){
+		this.waterRateId = id;
+		this.houseId = houseid;
+		this.payDate = date;
+		this.shouldPay = shpay;
+		this.realPay = repay;
+		this.payer = name;
+		this.payVal = interval;
+	}
+	
 	public int getWaterRateId() {
 		return waterRateId;
 	}

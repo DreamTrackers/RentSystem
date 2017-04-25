@@ -7,6 +7,13 @@ public class RenterInfoVO {
 	private String renterIdNum = null;
 	private String cellphone = null;
 	
+	public RenterInfoVO(int id, int houseid, String idNum, String phone){
+		this.renterId = id;
+		this.houseId = houseid;
+		this.renterIdNum = idNum;
+		this.cellphone = phone;
+	}
+	
 	public int getRenterId() {
 		return renterId;
 	}

@@ -14,6 +14,21 @@ public class PowerRateVO {
 	private String payer = null;
 	private String payVal = null;
 	
+	public PowerRateVO(int id, int houseid, String date, double numL, double numT,
+			double diff, double fee, double shpay, double repay, String name, String interval){
+		this.powerRateId = id;
+		this.houseId = houseid;
+		this.payDate = date;
+		this.numberForLast = numL;
+		this.numberForThis = numT;
+		this.difference = diff;
+		this.price = fee;
+		this.shouldPay = shpay;
+		this.realPay = repay;
+		this.payer = name;
+		this.payVal = interval;
+	}
+	
 	public int getPowerRateId() {
 		return powerRateId;
 	}
