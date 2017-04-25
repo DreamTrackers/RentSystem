@@ -11,6 +11,10 @@ import com.rentsystem.vo.PowerRateVO;
 public class PowerRateDAOImpl implements PowerRateDAO{
 	private Connection conn = null;
 	private PreparedStatement pstmt = null;
+	
+	public PowerRateDAOImpl(Connection conn){
+		this.conn = conn;
+	}
 
 	public boolean addPowerRate(PowerRateVO powerRate) {
 		boolean flag = false;

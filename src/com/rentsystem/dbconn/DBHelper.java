@@ -19,7 +19,7 @@ public class DBHelper {
 		}
 	}
 	
-	public Connection getConn(){
+	public Connection getConnection(){
 		return this.conn;
 	}
 	

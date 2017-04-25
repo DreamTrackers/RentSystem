@@ -11,6 +11,10 @@ import java.sql.*;
 public class HouseInfoDAOImpl implements HouseInfoDAO {
 	private Connection conn = null;
 	private PreparedStatement pstmt = null;
+	
+	public HouseInfoDAOImpl(Connection conn){
+		this.conn = conn;
+	}
 
 	public boolean addHouse(HouseInfoVO house) {
 		boolean flag = false;

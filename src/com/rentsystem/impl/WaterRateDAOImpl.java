@@ -11,6 +11,10 @@ import com.rentsystem.vo.WaterRateVO;
 public class WaterRateDAOImpl implements WaterRateDAO {
 	private Connection conn = null;
 	private PreparedStatement pstmt = null;
+	
+	public WaterRateDAOImpl(Connection conn){
+		this.conn = conn;
+	}
 
 	public boolean addWaterRate(WaterRateVO waterRate) {
 		boolean flag = false;

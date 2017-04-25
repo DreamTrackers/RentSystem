@@ -12,6 +12,10 @@ public class RenterInfoDAOImpl implements RenterInfoDAO{
 	private Connection conn = null;
 	private PreparedStatement pstmt = null;
 
+	public RenterInfoDAOImpl(Connection conn){
+		this.conn = conn;
+	}
+	
 	public boolean addRenterInfo(RenterInfoVO renter) {
 		boolean flag = false;
 		String SQL = "INSERT INTO RenterInfoTable VALUES (?,?,?,?)";
